@@ -17,7 +17,7 @@ Clone to a local directory, like `~/.dotfiles`, and set scripts as executable:
 
 ```bash
 $ cd ~
-$ git clone https://github.com/orrsella/dotfiles.git
+$ git clone https://github.com/maximn/dotfiles.git
 $ mv dotfiles .dotfiles
 $ cd .dotfiles/
 $ chmod +x symlink.sh

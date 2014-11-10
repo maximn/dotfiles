@@ -1,5 +1,4 @@
 PATH=/usr/local/sbin:$PATH                      # add /usr/local/sbin to PATH
-export JREBEL_PATH=~/Development/jrebel/jrebel.jar
 
 export PS1="\w $ "                              # set custom shell beginning
 
@@ -21,7 +20,7 @@ alias ip='ifconfig | grep "inet "'              # quickly print ip address
 alias grep='grep --color=auto'                  # color grep matches
 
 # Quick way to rebuild the Launch Services database and get rid of duplicates in the Open With submenu.
-alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'
+# alias fixopenwith='/System/Library/Frameworks/CoreServices.framework/Frameworks/LaunchServices.framework/Support/lsregister -kill -r -domain local -domain system -domain user | killall Finder'
 
 function ccd () { mkdir -p $1 && cd $1; }       # create and change dir
 function title () { echo -en "\033]2;$1\007"; } # set terminal title
