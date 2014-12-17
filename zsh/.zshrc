@@ -83,4 +83,4 @@ export PATH="/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin"
 export MAVEN_OPTS='-XX:PermSize=256m -XX:MaxPermSize=512m -Xms512m -Xmx2048m -XX:ReservedCodeCacheSize=64m'
 
 #java home
-export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+export JAVA_HOME=$(/usr/libexec/java_home)
