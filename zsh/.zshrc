@@ -45,7 +45,7 @@ ZSH_THEME="robbyrussell"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git osx brew sublime)
+plugins=(git osx brew sublime vagrant)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -79,8 +79,11 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:"
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-#More memmory for maven
-export MAVEN_OPTS='-XX:PermSize=256m -XX:MaxPermSize=512m -Xms512m -Xmx2048m -XX:ReservedCodeCacheSize=64m'
+#More memmory for maven # Java 7- -XX:PermSize=256m -XX:MaxPermSize=512m
+export MAVEN_OPTS='-Xms512m -Xmx2048m -XX:ReservedCodeCacheSize=64m'
 
 #java home
 export JAVA_HOME=$(/usr/libexec/java_home)
+
+#autojump
+[[ -s $(brew --prefix)/etc/autojump.sh ]] && . $(brew --prefix)/etc/autojump.sh
