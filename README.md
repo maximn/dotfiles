@@ -20,9 +20,6 @@ $ cd ~
 $ git clone https://github.com/maximn/dotfiles.git
 $ mv dotfiles .dotfiles
 $ cd .dotfiles/
-$ chmod +x symlink.sh
-$ chmod +x copy.sh
-$ chmod +x osx.sh
 ```
 
 #### Setup symlinks
